@@ -23,9 +23,9 @@
     {
       "include": "#storage"
     },
-	  {
-		"include": "#events"
-	  }
+    {
+      "include": "#events"
+    }
   ],
   "repository": {
     "keywords": {
@@ -105,14 +105,14 @@
         }
       ]
     },
-	  "events": {
-		"patterns": [
-		  {
-			"name": "variable.icr.event",
-			"match": "\\b(OnInit|BeforeKeyPress|AfterKeyPress|OnRunScriptKeyPress|OnIButtonPressed|OnCardSwipe|AfterModeChange|OnEnterPGMMenu|OnEnterPGMOptionList|OnWindowPaint|OnTimer|OnMouseEvent|BeforePrint|AfterSignOn|OnAwaitFile|OnBarcode|AfterFinalise|OnReceiptRequired|OnEmailOutResult|AfterCustomerLogOn|OnKPDeviceRequested|OnCustomerExpired|AfterRegItemSelect|OnFTPResult|AfterFullSalesDataReset|ReportEvent|OnFile_ReadPipeResult|OnMixMatch|OnWebPostResult|BeforeFinalise|PreSaleFinalised|OnSMSOutResult|AfterExtCustomerLogOn|OnRemoteMessageReceived|InsertAdditionalOrderInfo)\\b"
-		  }			
-		]
-	  }
+    "events": {
+      "patterns": [
+        {
+          "name": "entity.name.function.etal",
+          "match": "\\b(OnInit|BeforeKeyPress|AfterKeyPress|OnRunScriptKeyPress|OnIButtonPressed|OnCardSwipe|AfterModeChange|OnEnterPGMMenu|OnEnterPGMOptionList|OnWindowPaint|OnTimer|OnMouseEvent|BeforePrint|AfterSignOn|OnAwaitFile|OnBarcode|AfterFinalise|OnReceiptRequired|OnEmailOutResult|AfterCustomerLogOn|OnKPDeviceRequested|OnCustomerExpired|AfterRegItemSelect|OnFTPResult|AfterFullSalesDataReset|ReportEvent|OnFile_ReadPipeResult|OnMixMatch|OnWebPostResult|BeforeFinalise|PreSaleFinalised|OnSMSOutResult|AfterExtCustomerLogOn|OnRemoteMessageReceived|InsertAdditionalOrderInfo)\\b"
+        }
+      ]
+    }
   },
   "scopeName": "source.moc"
 }
