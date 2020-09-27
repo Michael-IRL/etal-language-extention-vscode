@@ -87,5 +87,9 @@
     "prefix": "glud",
     "body": ["$1 = ICR_GetLocalUserData(\"$1\");"],
     "description": "Get local user data for this etal"
+  },
+  "For Each": {
+    "prefix": "foreach",
+    "body": ["foreach(idx, val in $1)", "{", "\t$0", "}"]
   }
 }
