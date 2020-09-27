@@ -37,6 +37,10 @@
         {
           "name": "keyword.other.etal",
           "match": "\\b(print)\\b"
+        },
+        {
+          "name": "keyword.operator.etal",
+          "match": "(==|>=|<=|!=|<>|=>|=<)"
         }
       ]
     },
@@ -108,7 +112,7 @@
     "events": {
       "patterns": [
         {
-          "name": "entity.name.function.etal",
+          "name": "variable.etal",
           "match": "\\b(OnInit|BeforeKeyPress|AfterKeyPress|OnRunScriptKeyPress|OnIButtonPressed|OnCardSwipe|AfterModeChange|OnEnterPGMMenu|OnEnterPGMOptionList|OnWindowPaint|OnTimer|OnMouseEvent|BeforePrint|AfterSignOn|OnAwaitFile|OnBarcode|AfterFinalise|OnReceiptRequired|OnEmailOutResult|AfterCustomerLogOn|OnKPDeviceRequested|OnCustomerExpired|AfterRegItemSelect|OnFTPResult|AfterFullSalesDataReset|ReportEvent|OnFile_ReadPipeResult|OnMixMatch|OnWebPostResult|BeforeFinalise|PreSaleFinalised|OnSMSOutResult|AfterExtCustomerLogOn|OnRemoteMessageReceived|InsertAdditionalOrderInfo)\\b"
         }
       ]
