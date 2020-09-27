@@ -1,0 +1,91 @@
+{
+  "Do file": {
+    "prefix": "do",
+    "body": ["dofile(\"etal\\\\\\lib\\\\\\${1:strings}.moc\");"],
+    "description": "dofile import for lib files"
+  },
+  "For loop": {
+    "prefix": "for",
+    "body": [
+      "for(local nCount = ${2:0};nCount <= $1;nCount++)",
+      "{",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Befor Key Press": {
+    "prefix": "bkp",
+    "body": [
+      "function BeforeKeyPress(nFile,nRecord,nKeyType)",
+      "{",
+      "\t$2",
+      "\treturn ${1:true};",
+      "}"
+    ],
+    "description": "Before key press"
+  },
+  "After Key Press": {
+    "prefix": "akp",
+    "body": [
+      "function AfterKeyPress(nFile,nRecord,nKeyType)",
+      "{",
+      "\t$2",
+      "\treturn ${1:true};",
+      "}"
+    ],
+    "description": "After key press"
+  },
+  "On Card Swipe": {
+    "prefix": "ocs",
+    "body": [
+      "function OnCardSwipe(nTrack, szData)",
+      "{",
+      "\t$2",
+      "\treturn ${1:true};",
+      "}"
+    ]
+  },
+  "If Debug": {
+    "prefix": "ifd",
+    "body": [
+      "if(bDebugPrinting)",
+      "{",
+      "\tICR_EnableDebugLog(${1:false});",
+      "\tICR_SetFeature(\"CONSOLE\", ${2:true});",
+      "\tICR_SetFeature(\"AUTORESTART\", ${3:true});",
+      "}"
+    ]
+  },
+  "Create Etal": {
+    "prefix": "etal",
+    "body": [
+      "dofile(\"etal\\\\\\lib\\\\\\strings.moc\");\n",
+      "local bDebugPrinting = false;\n",
+      "function OnInit()",
+      "{",
+      "\tif(bDebugPrinting)",
+      "\t{",
+      "\t\tICR_EnableDebugLog(false);",
+      "\t\tICR_SetFeature(\"CONSOLE\",true);",
+      "\t\tICR_SetFeature(\"AUTORESTART\",true);",
+      "\t}",
+      "}\n",
+      "function BeforeKeyPress(nFile,nRecord,nKeyType)",
+      "{",
+      "\t$2",
+      "\treturn ${1:true};",
+      "}"
+    ],
+    "description": "Create a common layout for an etal"
+  },
+  "Set local User Data": {
+    "prefix": "slud",
+    "body": ["ICR_SetLocalUserData(\"$1\",$2,${3:true});"],
+    "description": "Set the local user data for this etal"
+  },
+  "Get local User Data": {
+    "prefix": "glud",
+    "body": ["$1 = ICR_GetLocalUserData(\"$1\");"],
+    "description": "Get local user data for this etal"
+  }
+}
