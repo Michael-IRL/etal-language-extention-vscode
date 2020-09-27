@@ -81,7 +81,7 @@
       "patterns": [
         {
           "name": "constant.language",
-          "match": "\\b(true|false)\\b"
+          "match": "\\b(true|false|crap)\\b"
         }
       ]
     },
