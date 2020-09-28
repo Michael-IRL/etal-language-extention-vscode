@@ -41,6 +41,10 @@
         {
           "name": "keyword.operator.etal",
           "match": "(==|>=|<=|!=|<>|=>|=<)"
+        },
+        {
+          "name": "keyword.symbols.etal",
+          "match": "\\b(ceil|floor|slice|len|find|push|append|sort|reverse|clear)\\b"
         }
       ]
     },
